@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li><a href="">ORIGINALS</a></li>
+                    <li>
+                        <a href="">GENRES</a>
+                    </li>
+                    <li>
+                        <a href="">POPULAR</a>
+                    </li>
+                    <li>
+                        <a href="">CANVAS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subnav js-login-btn">
+                <a href="#" class="login-btn ">Log in</a>
+            </div>
+            <span class="bar">|</span>
+            <i class="search-btn fas fa-search"></i>
+        </div>
+    </div>
+
+    <div id="slider">
+        <div class="background-slide">
+            <img height="492px" width="100%" src="/assets/img/slider/bgslide.jpg">
+        </div>
+
+        <div class="list-slide">
+            <a href="#">
+                <img src="/assets/img/slider/slide1.jpg">
+            </a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="list-manga-daily">
+            <div class="daily">
+                <ul>
+                    <li><a href="#">MON</a></li>
+                    <li><a href="#">TUE</a></li>
+                    <li><a href="#">WED</a></li>
+                    <li><a href="#">THU</a></li>
+                    <li><a href="#">FRI</a></li>
+                    <li><a href="#">SAT</a></li>
+                    <li><a href="#">SUN</a></li>
+                </ul>
+            </div>
+
+            <div class="list-manga">
+                <div class="manga-card">
+                    <h3 class="name-manga-card">To Love Your Enemy</h3>
+                    <span class="category-manga-card">Romance</span>
+                    <img src="/assets/img/manga-list-daily/test1.jpg" alt="" class="img-manga-card">
+                </div>
+
+                <div class="manga-card">
+                    <h3 class="name-manga-card">To Love Your Enemy</h3>
+                    <span class="category-manga-card">Romance</span>
+                    <img src="/assets/img/manga-list-daily/test1.jpg" alt="" class="img-manga-card">
+                </div>
+
+                <div class="manga-card">
+                    <h3 class="name-manga-card">To Love Your Enemy</h3>
+                    <span class="category-manga-card">Romance</span>
+                    <img src="/assets/img/manga-list-daily/test1.jpg" alt="" class="img-manga-card">
+                </div>
+
+                <div class="manga-card">
+                    <h3 class="name-manga-card">To Love Your Enemy</h3>
+                    <span class="category-manga-card">Romance</span>
+                    <img src="/assets/img/manga-list-daily/test1.jpg" alt="" class="img-manga-card">
+                </div>
+
+                <div class="manga-card">
+                    <h3 class="name-manga-card">To Love Your Enemy</h3>
+                    <span class="category-manga-card">Romance</span>
+                    <img src="/assets/img/manga-list-daily/test1.jpg" alt="" class="img-manga-card">
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id="content">
+
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+        <div class="icon-contact">
+            <ul>
+                <a href="#">
+                    <li><i class="fab fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fab fa-facebook-messenger"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fab fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="text-contact">
+            <span class="span-text-contact"> 
+                <a href="#">About </a> <p class="line">|</p>
+                <a href="#">Feedback </a> <p class="line">|</p>
+                <a href="#">Help </a> <p class="line">|</p>
+                <a href="#">Terms </a> <p class="line">|</p>
+                <a href="#">Privacy </a> <p class="line">|</p>
+                <a href="#">Advertise </a> <p class="line">|</p>
+                <select name="" id="" class="language-footer">
+                    <option>English</option>
+                    <option>Tiếng Việt</option>
+                    
+                </select>
+            </span>
+        </div>
+    </div>
+    <div class="login-form js-login-form">
+        <div class="login-container">
+            <div class="login-close js-close-login-form">
+                <i class="login-form-close-icon far fa-times-circle"></i>
+            </div>
+            <div class="login-header">
+                <i class="login-form-icon fas fa-sign-in-alt"></i> LOGIN FORM
+            </div>
+
+            <div class="login-body">
+                <label for="" class="login-label">
+                    <input type="text" class="login-input" placeholder="Email Address">
+
+                   
+                </label>
+
+                <label for="" class="login-label">
+                   
+
+                    <input  type="password" class="login-input" placeholder="Password">
+                </label>
+
+                <div class="login-form-btn">
+                    <button class="sign-up-btn">Sign up</button>
+                    <button class="log-in-btn">Log in</button>
+                </div>
+                <div class="login-forgot">
+                    <a href="#" class="text-forgot">Forgot Password?</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="login-footer"></div>
+        </div>
+    </div>
+</body>
+<script>
+    const loginBtn = document.querySelector('.js-login-btn')
+    const loginForm = document.querySelector('.js-login-form')
+    const closeForm = document.querySelector('.js-close-login-form')
+
+    function showLoginForm() {
+        loginForm.classList.add('open')
+    }
+
+    function hideLoginForm() {
+        loginForm.classList.remove('open')
+    }
+
+    loginBtn.addEventListener('click', showLoginForm)
+
+    closeForm.addEventListener('click', hideLoginForm)
+</script>
+
+</html>
